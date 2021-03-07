@@ -87,20 +87,22 @@
   <div class="container">
     <!--##################START HERE####################-->
 
+    <!-- IMPORTANT: INITIALIZE BELOW IN JS -->
+
     <!-- POPOVER -->
-    <button class="btn btn-danger">
+    <button class="btn btn-danger" data-toggle="popover" data-placement="right" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus voluptas delectus ipsum. Iusto quaerat eos aperiam saepe alias, aut odio, fugit quo, delectus incidunt voluptates ipsa adipisci? Ab, pariatur!">
       Toggle popover
     </button>
 
-    <button class="btn btn-primary">
+    <button class="btn btn-primary" data-toggle="popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus voluptas delectus ipsum. Iusto quaerat eos aperiam saepe alias, aut odio, fugit quo, delectus incidunt voluptates ipsa adipisci? Ab, pariatur!">
       Toggle popover
     </button>
 
-    <button class="btn btn-warning">
+    <button class="btn btn-warning" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus voluptas delectus ipsum. Iusto quaerat eos aperiam saepe alias, aut odio, fugit quo, delectus incidunt voluptates ipsa adipisci? Ab, pariatur!">
       Toggle popover
     </button>
 
-    <button class="btn btn-info">
+    <button class="btn btn-info"data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus voluptas delectus ipsum. Iusto quaerat eos aperiam saepe alias, aut odio, fugit quo, delectus incidunt voluptates ipsa adipisci? Ab, pariatur!">
       Toggle popover
     </button>
 
@@ -108,8 +110,8 @@
     <br>
 
     <!-- DISMISSIBLE POPOVER -->
-    <button class="btn btn-primary">
-      Toggle popover
+    <button class="btn btn-primary" data-toggle="popover" data-placement="right" data-trigger="focus" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus voluptas delectus ipsum. Iusto quaerat eos aperiam saepe alias, aut odio, fugit quo, delectus incidunt voluptates ipsa adipisci? Ab, pariatur!">
+      Toggle popover DISMISSIBLE
     </button>
 
     <hr>
@@ -129,6 +131,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <script>
+    // init popovers
+    $('[data-toggle=popover]').popover();
 
   </script>
 </body>
